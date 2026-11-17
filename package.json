@@ -1,0 +1,28 @@
+{
+  "name": "tez-jumush",
+  "version": "1.0.0",
+  "description": "Tez Jumush - Task Management Application",
+  "main": "frontend/index.js",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "start:tunnel": "cd frontend && npx expo start --tunnel",
+    "start:lan": "cd frontend && npx expo start --lan",
+    "start:iphone": "cd frontend && npx expo start --tunnel --clear",
+    "start:web": "cd frontend && npm run web",
+    "start:pwa": "cd frontend && npm run web:pwa",
+    "build": "cd frontend && npm run build",
+    "install": "cd frontend && npm install",
+    "android": "cd frontend && npm run android",
+    "ios": "cd frontend && npm run ios",
+    "web:build": "cd frontend && npm run web:build",
+    "web:dev": "cd frontend && npm run web:dev",
+    "serve:pwa": "cd frontend && npm run serve:pwa",
+    "backend": "cd backend && python main.py",
+    "backend:dev": "cd backend && python run.py"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

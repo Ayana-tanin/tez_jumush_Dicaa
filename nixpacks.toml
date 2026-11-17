@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["python311", "postgresql"]
+
+[phases.install]
+cmds = [
+    "pip install --no-cache-dir -r requirements.txt",
+    "cd backend && pip install --no-cache-dir -r ../requirements.txt || true"
+]
+
+[phases.build]
+cmds = [
+    "echo 'Build complete'"
+]
+
+[start]
+cmd = "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
